@@ -1,0 +1,188 @@
+@import "./normalize.css";
+
+:root {
+  --primary-color: #1a73e8;
+
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation Bar */
+
+.bar {
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.171);
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 15px;
+  
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.logo img {
+  width: 30px;
+}
+
+.logo span{
+  color: gray;
+  margin-left: 7px;
+  display: none;
+}
+
+.logo span:hover {
+  color: rgba(0, 0, 255, 1);
+}
+
+.nav {
+  display: flex;
+}
+
+.btn {
+  padding: 13px 20px;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: background-color .2s ease-out;
+  margin-right: 1.1rem;
+}
+
+.accsentBtn {
+  background: white;
+  color:var(--primary-color);
+  display: none;
+}
+
+.secondaryBtn {
+ background: white;
+ color: var(--primary-color); 
+ border: 1px solid rgba(0, 0, 0, 0.131);
+ 
+}
+
+.primaryBtn {
+  background-color: var(--primary-color);
+  color: #fff;
+  display: none;
+}
+
+.accsentBtn:hover, .secondaryBtn:hover {
+  background: #f4f8fe;
+}
+
+.primaryBtn:hover {
+  background-color: #174ea6;
+}
+
+@media screen and (min-width: 600px) {
+  .logo span {
+    display: block;
+  }
+
+  .btn {
+    display: block;
+  }
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1024px){
+  .container {
+    max-width: 1000px;
+  }
+  .logo {
+    font-size: 1.3rem
+  }
+}
+
+@media screen and (min-width: 1440px){
+  .container {
+    max-width: 1450px;
+  }
+}
+
+/* Main Section */
+main {
+  overflow: hidden;
+  background-color: #fff;;
+}
+
+.wrapper {
+  margin: 3rem auto;
+}
+
+.text-container {
+  max-width: 70%;
+  padding: 0 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.text-container p {
+  line-height: 1.5rem;
+  margin-bottom: 1.8rem;
+  color: #686c71;
+}
+
+.text-container a {
+  display: inline-block;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+/* Media Queries */
+@media screen and (min-width: 600px) {
+  .text-container {
+    width: 100%;
+    padding: 0;
+  }
+  .wrapper {
+    padding: 0 2rem;
+    max-width: 500px;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .heading {
+    display: flex;
+    min-height: 90vh;
+    margin-top: 10rem;
+  }
+  .wrapper {
+    max-width: 1024px;
+  }
+  .text-container {
+    max-width: 40%;
+  }
+  .text-container h1 {
+    font-size: 3.5rem;
+  }
+  .image-container {
+    margin-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .wrapper {
+    max-width: 1200px;
+  }
+  .image-container {
+    margin-left: 7rem;
+  }
+  .text-container h1 {
+    font-size: 4rem;
+  }
+}
