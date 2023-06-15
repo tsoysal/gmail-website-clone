@@ -177,25 +177,29 @@ main {
   .image-container {
     margin-left: 7rem;
   }
+  .mr-7 {
+    margin-left: 0;
+    margin-right: 7rem;
+  }
   .text-container h1 {
     font-size: 4rem;
   }
 }
 
 /* Section 01 */
-.sec-1 .image-container {
+.sec-1, .sec-2 .image-container {
   display: none;
 }
 
-.sec-1 {
+.sec-1, .sec-2 {
   margin-top: 10rem;
 }
 
-.sec-1 .text-container {
+.sec-1 .text-container, .sec-2 .text-container {
   max-width: 500px;
 }
 
-.sec-1 img {
+.sec-1 img, .sec-2 img {
   width: 100%;
   margin: 0 auto;
 }
@@ -214,15 +218,15 @@ main {
   padding-left: 20px;
 }
 
-.feature-container.active .text {
+.feature-container.active1 .text, .feature-container.active2 .text {
   border-left-color: #1a73e8;
 }
 
-.feature-container.active img {
+.feature-container.active1 img, .feature-container.active2 img {
   display: block !important;
 }
 
-.feature-container.active h3{
+.feature-container.active1 h3, .feature-container.active2 h3{
   color: #1a73e8;
 }
 
@@ -235,14 +239,17 @@ main {
     line-height: 1.8rem;
     letter-spacing: .02rem;
   }
-  .feature-container.active img {
+  .feature-container.active1 img, .feature-container.active2 img {
     display: none !important;
   }
   .image-container {
     display: block !important;
   }
-  .sec-1 {
+  .sec-1, .sec-2 {
     display: flex;
     align-items: center;
   }
 }
+
+
+/* Section 2 */
