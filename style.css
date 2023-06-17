@@ -251,5 +251,56 @@ main {
   }
 }
 
+/* listfeature */
+.listfeature {
+  background-color: #f8f9fa;
+  padding: 5rem 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
 
-/* Section 2 */
+
+/* Text Chapter */
+.textchapter {
+  text-align: center;
+  margin: 5rem 0;
+  padding: 3rem 10px;
+}
+
+.textchapter h3 {
+  font-size: 1.5rem;
+}
+
+.textchapter h4 {
+  color: #5f6368;
+}
+
+.textchapter p {
+  color: #5f6368;
+  line-height: 2rem;
+  margin-bottom: 2rem;
+}
+
+.textchapter a {
+  display: inline;
+}
+
+@media screen and (min-width: 1024px) {
+  .textchapter {
+    max-width: 900px;
+    margin-inline: auto;
+  }
+
+  .textchapter h3 {
+    font-size: 2.5rem;
+  }
+
+  .textchapter h4 {
+    font-size: 1.5rem;
+  }
+
+  .textchapter p {
+    font-size: 1.2rem;
+  }
+}
