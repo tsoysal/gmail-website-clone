@@ -285,6 +285,14 @@ main {
   .listfeature {
     justify-content: center;
     flex-direction: row;
+    align-items: baseline;
+  }
+  .listfeature h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+  .listfeature p {
+    font-size: 1rem;
   }
 }
 
